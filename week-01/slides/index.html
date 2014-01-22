@@ -1,0 +1,194 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Introduction, and Basic Date Types</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/python_logo_128.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+<slide>
+    <hgroup>
+      <h2>Week 01 - Objectives</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>General Introduction</li>
+        <li>Understand how to start the python interpreter/li>
+        <li>Writing your first python program</li>
+        <li>Understand the basics of variables in python/li>
+      </ul>
+    </article>
+  </slide>
+
+<slide>
+  <hgroup>
+    <h2>Why are we here?</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+      <p>
+        In this class we will learn the basics of the Python programing language. Python is a great language to learn computer  programing, because of this we will also cover basic computer programing concepts.
+      </p>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Class Mailing List</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+    <p>Python Classes and Noisebrige share a <a href="http://groups.google.com/group/pyclass">mailing list</a>. You should join the mailing list so you can get help with your assignments. Also this is how you will receive anouncements if the class must be canceled.</p>
+
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Your Instructor</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Kellan Jacobs</li>
+      <li>Google Plus: <a href="http://kellan.us/gplus">http://kellan.us/gplus</a></li>
+      <li>Twitter: <a href="http://kellan.us/twitter">http://kellan.us/twitter</a></li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Kellan's History</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+    <p>My first computer</p>
+    <ul>
+      <li>Tandy TSR-80<img src="images/TRS-80_Model_3_01.jpg" style="float:right" alt="Description" title="Description"></li>
+      <li>Model III</li>
+      <li>16k of RAM</li>
+      </li>Casset drive insted of floppy</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Kellan's History</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+    <p>Highschool</p>
+      <ul>
+        <li>Updated computer to a Macintosh SE</li>
+        <li>Tried to learn C and failed</li>
+        <li>Typical computer geek</li>
+      </ul>
+      <p>College</p>
+      <ul>
+        <li>Built my first computer</li>
+        <li>Learned C++</li>
+        <li>Tutored C that that I didn't learn when I was 14</li>
+      </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Kellan's History</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+    <p>Career</p>
+    <img src="images/technorati_logo.png" class="reflect" alt="Description" title="Description">
+    <img src="images/kink_logo.png" class="reflect" alt="Description" title="Description">
+    <img src="images/genentech_logo.png" class="reflect" alt="Description" title="Description"><br/>
+    <img src="images/iogroup_logo.gif" class="reflect" alt="Description" title="Description">
+    <img src="images/ccc_logo.jpg" class="reflect" alt="Description" title="Description">
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Kellan's History</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+      <p>Took my first System Administration job and needed to learn an advanced scripting language. The choices at the time were perl or python. I thought chomp is perl was dumb so I picked python. As soon as I started learning I was hooked.</p>
+      <p>Today I use python for:</p>
+      <ul>
+        <li>Default shell scriping language</li>
+        <li>Text processing (Regex)</li>
+        <li>Web Developement (django, pyramid, Flask)</li>
+        <li>Data crunching from databases (SQLAlchemy)</li>
+      </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>How about you?</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+    <p>Tell me something about you? We will go around the room. When it is your turn please answer the following questions.
+    <ul>
+      <li>What is your name?</li>
+      <li>Why are you learning python?</li>
+      <li>Do you know any other programing languages?</li>
+    </ul>
+  </article>
+</slide>
+
+<slide class="backdrop"></slide>
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
