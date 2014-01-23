@@ -43,6 +43,7 @@ URL: https://code.google.com/p/io-2012-slides
     <article>
       <ul>
         <li>General Introduction</li>
+        <li>Understand the Python Ecosystem</li>
         <li>Understand how to start the python interpreter/li>
         <li>Writing your first python program</li>
         <li>Understand the basics of variables in python/li>
@@ -167,6 +168,523 @@ URL: https://code.google.com/p/io-2012-slides
       <li>What is your name?</li>
       <li>Why are you learning python?</li>
       <li>Do you know any other programing languages?</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Github Project</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+    <p>The files for our class is stored in github. You should clone the respoitory and update it each week before you come to class.</p>
+    <p>Github Project: <a href="https://github.com/kellanjacobs/BeginningPython">https://github.com/kellanjacobs/BeginningPython</a></p>
+    <p>Syllabus: <a href="http://pycourse.com/syllabus/">http://pycourse.com/syllabus/</a></p>
+    <pre class="prettyprint" data-lang="console">
+cd ~/Documents
+git clone https://github.com/kellanjacobs/BeginningPython
+cd BeginningPython
+    </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Required Materials</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+    <p>What you need</p>
+    <ul>
+      <li>Laptop with python 2.7.x Not Python 3</li>
+      <li>A <a href="http://www.sublimetext.com/2">good text editor</a></li>
+      <li>The command line to run code The interactive shell</li>
+      <li>Copy of <a href="http://www.greenteapress.com/thinkpython/">Think Python</a></li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Class Structure</h2>
+    <h3>General Introduction</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>30 Minute Lecture</li>
+      <li>30 Minute Lab</li>
+      <li>30 Minute Lecture</li>
+      <li>30 Minute Lab</li>
+      <li>Homework will be assigned each week. To be successful in programing you need to practice by doing your homework.</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Where is python used?</h2>
+    <h3>Python Ecosystem</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>CS education</li>
+      <li>Movie and game making (Blender, Maya, Industrial Light & Magic)</li>
+      <li>GIS</li>
+      <li>System administration</li>
+      <li>Web applications (Pyramid, Django, Flask)</li>
+      <li>Scientific/technical computing (NASA)</li>
+      <li>Research (natural language, graph theory, Drug Discovery)</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Who uses python</h2>
+    <h3>Python Ecosystem</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Beginners</li>
+      <li>Professional software developers, computer system administrators</li>
+      <li>Professionals OTHER THAN computer specialists: biologists, urban planners</li>
+      <li>An unusually large number of types of users – versatile</li>
+    </ul>
+    <p>You can be productive in Python WITHOUT full-time immersion!</p>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>What python gets right</h2>
+    <h3>Python Features</h3>
+  </hgroup>
+  <article>
+    <p>Readable, looks nice, makes sense</p>
+      <img src="images/foxtrot.gif" />
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Python vs C</h2>
+    <h3>Python Features</h3>
+  </hgroup>
+  <article class="smaller">
+    <p>Some C code</p>
+    <pre class="prettyprint" data-lang="c">
+#include &lt;stdio.h&gt;
+int main(void) {
+    int count;
+    for(count=1; count&lt;=500; count++){
+        printf("I will not throw paper airplanes in class");
+    }
+}
+    </pre>
+    <p>The same example in python</p>
+    <pre class="prettyprint" data-lang="python">
+for line in range(500):
+    print "%s. I will not throw paper airplanes in class" % (line + 1)
+      </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>More stuff python gets right</h2>
+    <h3>Python Features</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>No ideology about best way to program – object-oriented programming, functional, etc.</li>
+      <li>No platform preference – Windows, Mac, Linux, ...</li>
+      <li>Easy to connect to other languages – C, Fortran - essential for science/math</li>
+      <li>Large standard library</li>
+      <li>Even larger network of external packages</li>
+      <li>Countless conveniences, large and small, make it pleasant to work with</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>More stuff python gets right</h2>
+    <h3>Python Features</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Dynamic - no type declarations</li>
+      <li>Programs are shorter programs are more flexible less code means fewer bugs</li>
+      <li>Interpreted - no separate compile, build steps - programming process is simpler</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>More suff python gets right</h2>
+    <h3>Python Features</h3>
+  </hgroup>
+  <article>
+    <p>Duck Typing</p>
+    <ul class="build">
+      <li>“If it looks like a duck, and quacks like a duck – it’s probably a duck”</li>
+      <li>If an object behaves as expected at run-time, it’s the right type.</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Which version of python should I use</h2>
+    <h3>Python Versions</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Version 2.x
+        <ul><li>Python builds on the original version and is the standard for most python code today.</li></ul>
+      </li>
+      <li>Version 3.x
+        <ul><li>Updated version – removed the "warts" allowed to break code (but really not all that different). Not all that well adopted yet – many packages not supported.</li></ul>
+      </li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Your first python program</h2>
+    <h3>Running Python</h3>
+  </hgroup>
+  <article>
+    <p>Run this in your terminal</p>
+    <pre class="prettyprint" data-lang="console">
+$ python
+>>> print "Hello World"
+Hello World
+>>> exit()
+    </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Runing python modules</h2>
+    <h3>Running Python</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>python hello.py – must be in current working directory</li>
+      <li>python -m hello – any module on PYTHONPATH anywhere on the system</li>
+      <li>./hello.py – put \#!/usr/env/python at top of module (Unix)</li>
+      <li>python -i hello.py – import module, remain in interactive session</li>
+      <li>import hello – at the python prompt – importing a module executes its contents</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Python Documentation</h2>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Official Documentation
+                <ul>
+                    <li><a href="http://docs.python.org/index.html">http://docs.python.org/index.html</a></li>
+                </ul>
+            </li>
+            <li>Library Reference
+                <ul>
+                    <li><a href="http://docs.python.org/library/index.html">http://docs.python.org/library/index.html</a></li>
+                </ul>
+            </li>
+            <li>Python Enhancement Proposal (PEP)
+                <ul>
+                    <li><a href="http://www.python.org/dev/peps/pep-0001/">PEP 1 PEP Purpose and Guidelines</a></li>
+                    <li><a href="http://www.python.org/dev/peps/pep-0008/">PEP 8 Style Guide for Python Code</a></li>
+                    <li><a href="http://www.python.org/dev/peps/pep-0020/">PEP 20 the Zen of Python (import this)</a></li>
+                </ul>
+            </li>    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Getting Started with python</h2>
+    <h3>Week 01 - Lab 01</h3>
+  </hgroup>
+  <article>
+      <ul>
+        <li>If you haven't already install <a href="python.org">python</a>.</li>
+        <li>Install <a href="http://git-scm.com/">git</a>
+            <ul>
+                <li>Ubuntu  sudo apt-get install git or sudo apt-get install git-core</li>
+                <li>Mac Download from site</li>
+                <li>Windows install <a href="http://windows.github.com/">Github for windows</a></li>
+            </ul>
+        </li>
+        <li>Clone the get repo for our class
+            <ul><li>git clone https://github.com/kellanjacobs/BeginningPython</li></ul>
+        </li>
+        <li>Lastly using your text editor create a file that prints out Hello my name is YOURNAME. Using python is easy. and run this file using the python interepiter.</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Values, expressions, and types</h2>
+  </hgroup>
+  <article>
+    <p>Values (data) vs. variables (names with values)</p>
+    <ul>
+      <li>Values are pieces of unnamed data: 42, 'Hello, world', In Python, all values are objects</li>
+        <li>Try dir(42) - lots going on behind the curtain! (demo)</li>
+        <li>Every value belongs to a type: integer, float, str, ... (demo)</li>
+        <li>An expression is made up of values and operators, is evaluated to produce a value: 2 + 2, etc.</li>
+        <li>Python interpreter can be used as a calculator to evaluate expressions (demo)</li>
+        <li>Integer vs. float arithmetic (demo)</li>
+        <li>Type errors - checked at run time only (demo) Type conversions (demo)</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Variables</h2>
+    <h3>Values, expressions, and types</h3>
+  </hgroup>
+  <article>
+    <p>Variables are names for values - objects</p>
+    <p>Variables dont have a type; values do – this is where the dynamic comes from</p>
+    <pre class="prettyprint" data-lang="python">
+>>> type(42)
+&lt;type 'int'&gt;
+>>> type(3.14)
+&lt;type ’float’&gt;
+>>> a = 42
+>>> b = 3.14
+>>> type(a)
+&lt;type ’int’&gt;
+>>> a = b
+>>> type(a)
+&lt;type ’float’&gt;
+    </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Variables Names</h2>
+    <h3>Values, expressions, and types</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Variable names must start with a letter</li>
+      <li>They can be of any length</li>
+      <li>The can contain letters, numbers, or underscores</li>
+      <li>Variable names should describe what is stored in them.
+        <ul>
+            <li>variable named "t" is ok</li>
+            <li>variable named "tax_rate" is better</li>
+        </ul>
+      </li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Variable Assignment</h2>
+    <h3>Values, expressions, and types</h3>
+  </hgroup>
+  <article>
+      <ul>
+        <li>Assignment is really name binding
+            <ul>
+                <li>Attaching a name to a value</li>
+                <li>A value can have many names (or none!)</li>
+            </ul>
+        </li>
+        <li>= assigns (binds a name)</li>
+        <li>del only unbinds a name</li>
+        <li><b>Multiple Assignment</b>
+            <ul>
+                <li>a, b = 1, 2</li>
+                <li>This will come in handy later (DEMO)</li>
+            </ul>
+        </li>
+      </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Variable Assignment</h2>
+    <h3>Values, expressions, and types</h3>
+  </hgroup>
+  <article>
+    <p>Here is how you bind a value to a variable</p>
+    <pre class="prettyprint" data-lang="python">
+>>> sales_tax = 0.0825
+>>> print sales_tax
+0.0825
+    </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Adding Variables</h2>
+    <h3>Values, expressions, and types</h3>
+  </hgroup>
+  <article>
+    <p>You can also add variables to get new values</p>
+    <pre class="prettyprint" data-lang="python">
+>>> x = 5
+>>> y = 4
+>>> z = x + y
+>>> print z
+9
+    </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Subtracting Variables</h2>
+    <h3>Values, expressions, and types</h3>
+  </hgroup>
+  <article>
+    <p>You can also add variables to get new values</p>
+    <pre class="prettyprint" data-lang="python">
+>>> x = 5
+>>> y = 4
+>>> z = x - y
+>>> print z
+1
+    </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Multiplying Variables</h2>
+    <h3>Values, expressions, and types</h3>
+  </hgroup>
+  <article>
+    <p>You can also add variables to get new values</p>
+    <pre class="prettyprint" data-lang="python">
+>>> x = 5
+>>> y = 4
+>>> z = x * y
+>>> print z
+20
+    </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Other Operations</h2>
+    <h3>Values, expressions, and types</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Division you use /</li>
+      <li>Exponents you use a double * ex 2 ** 4</li>
+      <li>Modulus/Modulo If you want the remainer of division use %</li>
+    </ul>
+    <pre class="prettyprint" data-lang="python">
+>>> x = 5
+>>> y = 4
+>>> z = x % y
+>>> print z
+1
+    </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Operator Precedence</h2>
+    <h3>Values, expressions, and types</h3>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Operator Precedence determines what evaluates first
+        <ul>
+          <li>4 + 3 * 5 != (4 + 3) * 5</li>
+          <li>Use parentheses</li>
+        </ul>
+      </li>
+      <li>Precedence of common operators
+        <ul>
+          <li>Exponents **</li>
+          <li>Multiplication, division, modulo *, /, %</li>
+          <li>Addition and subtraction + -</li>
+          <li>&lt;, &lt;=, &gt;, &gt;=, !=, ==, True, False</li>
+          <li>or and not</li>
+          <li>in, not in, is, is not</li>
+        </ul>
+      </li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>String Literals</h2>
+    <h3>Values, expressions, and types</h3>
+  </hgroup>
+  <article>
+    <p>Some Text</p>
+    <pre class="prettyprint" data-lang="python">
+'a string'
+"also a string"
+"a string with an apostophe: isn't it cool?"
+' a string with an embedded "quote" '
+""" a multi-line
+string
+all in one
+"""
+"a string with an \n escaped character"
+r'a "raw" string the \n comes through as a \n'
+    </pre>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Using Variables, assignments, and operations</h2>
+    <h3>Week 01 - Lab 02</h3>
+  </hgroup>
+  <article>
+      <ul>
+        <li>Create a program that prints out a restraunt receipt.
+          <ul>
+            <li>Your receipt should have three items on it.</li>
+            <li>Each item should have a different price</li>
+            <li>Add the items total and computer the tax</li>
+            <li>Print out the subtotal, tax and grand total</li>
+            <li>Extra credit if you look up online how to align it using string formatting</li>
+          </ul>
+        </li>
+        <li>If you get stuck ask for help. Ask for help before looking at the answer in the lab answer folder</li>
+    </ul>
+  </article>
+</slide>
+
+<slide>
+  <hgroup>
+    <h2>Week 01 Homework</h2>
+  </hgroup>
+  <article>
+    <ul>
+      <li>Read Chapters 02-03 in Think Python</li>
+      <li>Complete Week 01 Homework</li>
     </ul>
   </article>
 </slide>
